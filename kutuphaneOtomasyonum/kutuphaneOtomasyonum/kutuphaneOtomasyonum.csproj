@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{381F04C7-516B-4348-9258-7305F68D27EB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>kutuphaneOtomasyonum</RootNamespace>
+    <AssemblyName>kutuphaneOtomasyonum</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.CodeParser.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v17.1.Core, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v17.1.Core, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v17.1.Core, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v17.1.Core, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="baglanti.cs" />
+    <Compile Include="emanetKitapListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="emanetKitapListele.Designer.cs">
+      <DependentUpon>emanetKitapListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmanetKitapVerme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmanetKitapVerme.Designer.cs">
+      <DependentUpon>EmanetKitapVerme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="emanetKitapİade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="emanetKitapİade.Designer.cs">
+      <DependentUpon>emanetKitapİade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giris.Designer.cs">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="grafik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="grafik.Designer.cs">
+      <DependentUpon>grafik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kayitOl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kayitOl.Designer.cs">
+      <DependentUpon>kayitOl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kitapEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kitapEkle.Designer.cs">
+      <DependentUpon>kitapEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kitapListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kitapListele.Designer.cs">
+      <DependentUpon>kitapListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sıralama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sıralama.Designer.cs">
+      <DependentUpon>sıralama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uyeLısteleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uyeLısteleme.Designer.cs">
+      <DependentUpon>uyeLısteleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yetkiliDetayPaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yetkiliDetayPaneli.Designer.cs">
+      <DependentUpon>yetkiliDetayPaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="üyeEkleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="üyeEkleme.Designer.cs">
+      <DependentUpon>üyeEkleme.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="emanetKitapListele.resx">
+      <DependentUpon>emanetKitapListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmanetKitapVerme.resx">
+      <DependentUpon>EmanetKitapVerme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="emanetKitapİade.resx">
+      <DependentUpon>emanetKitapİade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Giris.resx">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="grafik.resx">
+      <DependentUpon>grafik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kayitOl.resx">
+      <DependentUpon>kayitOl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kitapEkle.resx">
+      <DependentUpon>kitapEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kitapListele.resx">
+      <DependentUpon>kitapListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="sıralama.resx">
+      <DependentUpon>sıralama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uyeLısteleme.resx">
+      <DependentUpon>uyeLısteleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yetkiliDetayPaneli.resx">
+      <DependentUpon>yetkiliDetayPaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="üyeEkleme.resx">
+      <DependentUpon>üyeEkleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\library-books-background-8-Kentland-Public-Library.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
